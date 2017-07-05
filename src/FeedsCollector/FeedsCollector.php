@@ -20,7 +20,7 @@ class FeedsCollector
 			$feeds = array_merge($feeds, $provider->getFeeds());
 		}
 
-		return $feeds;
+		return array_slice($feeds, 0, 25);
 	}
 
 }

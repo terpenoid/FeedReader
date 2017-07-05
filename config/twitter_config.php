@@ -8,6 +8,6 @@ return [
     'consumer_secret' => 'EfmuxWuZ7n8J1sshyRcO39xdow0OTOqgUdfUWdnlNkY',
 
 	'feed_user_name' => 'Ukraine',
-	'feeds_count' => '10',
+	'feeds_count' => '25',
 ];
 
