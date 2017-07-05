@@ -1,0 +1,17 @@
+{
+    "name": "atmega64/feeds_reader",
+    "description": "test task",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Konstantin Prilepskiy",
+            "email": "k.prilepskiy@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ProjectRoot\\" : "",
+            "FeedsReaderBackend\\" : "src/FeedsReaderBackend/"
+        }
+    }
+}
