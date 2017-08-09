@@ -1,17 +1,17 @@
 {
-    "name": "atmega64/feeds_reader",
-    "description": "test task",
-    "type": "project",
+    "name": "atmega64/test-composer",
     "authors": [
         {
             "name": "Konstantin Prilepskiy",
             "email": "k.prilepskiy@gmail.com"
         }
     ],
+    "require": {
+        "components/jquery": "^3.2"
+    },
     "autoload": {
-        "psr-4": {
-            "ProjectRoot\\" : "",
-            "FeedsReaderBackend\\" : "src/FeedsReaderBackend/"
+        "psr-0": {
+            "FeedReader": "src/",
         }
     }
 }

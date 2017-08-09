@@ -4,35 +4,29 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb3f62cec60069b2e595235bfa133547f
+class ComposerStaticInit45e7619be6b3546725c919aa216dc5a2
 {
-    public static $prefixLengthsPsr4 = array (
-        'P' => 
-        array (
-            'ProjectRoot\\' => 12,
-        ),
+    public static $prefixesPsr0 = array (
         'F' => 
         array (
-            'FeedsReaderBackend\\' => 19,
+            'FeedReader' => 
+            array (
+                0 => __DIR__ . '/../..' . '/src',
+            ),
         ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'ProjectRoot\\' => 
+        'A' => 
         array (
-            0 => __DIR__ . '/../..' . '/',
-        ),
-        'FeedsReaderBackend\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/FeedsReaderBackend',
+            'Atmega64' => 
+            array (
+                0 => __DIR__ . '/../..' . '/src',
+            ),
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb3f62cec60069b2e595235bfa133547f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb3f62cec60069b2e595235bfa133547f::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit45e7619be6b3546725c919aa216dc5a2::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

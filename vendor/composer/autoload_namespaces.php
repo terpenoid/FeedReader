@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'FeedReader' => array($baseDir . '/src'),
+    'Atmega64' => array($baseDir . '/src'),
 );

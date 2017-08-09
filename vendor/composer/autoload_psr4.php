@@ -6,6 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ProjectRoot\\' => array($baseDir . '/'),
-    'FeedsReaderBackend\\' => array($baseDir . '/src/FeedsReaderBackend'),
 );

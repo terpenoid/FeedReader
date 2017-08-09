@@ -7,7 +7,7 @@
 
 <div ng-controller="FeedsListController">
 
-    <label>Autoupdate:
+    <label>Auto-update:
         <input type="checkbox" ng-model="autoupdate" ng-click="getFeeds()">
     </label>
 
@@ -23,34 +23,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
 <script>
-
     var feedReaderApp = angular.module('feedReaderApp', []);
-
     feedReaderApp.controller('FeedsListController', function FeedsListController($scope, $http, $timeout) {
-
         $scope.feeds = [];
         $scope.autoupdate = false;
-
         $scope.getFeeds = function () {
-
             if (!$scope.autoupdate) return;
-
             $http.get('backend.php').then(
                 function (response) {
                     $scope.feeds = response.data;
                 });
-
             $timeout(function () {
                 $scope.getFeeds();
             }, 10000);
-
         };
-
     });
-
 </script>
 
 </body>
 </html>
-
-
